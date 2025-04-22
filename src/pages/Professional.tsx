@@ -1,6 +1,6 @@
 
 import { Layout } from '@/components/layout/Layout';
-import { Briefcase, Award, Users, Star, Code, Database, Cloud, DataAnalytics, Lightbulb } from 'lucide-react';
+import { Briefcase, Award, Users, Star, Code, Database, Cloud, BarChart, Lightbulb } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
 export default function Professional() {
@@ -60,7 +60,7 @@ export default function Professional() {
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2"><Briefcase className="h-4 w-4 text-accent" /> Product Development</li>
                   <li className="flex items-center gap-2"><Cloud className="h-4 w-4 text-accent" /> Cloud Architecture</li>
-                  <li className="flex items-center gap-2"><DataAnalytics className="h-4 w-4 text-accent" /> Data Analytics</li>
+                  <li className="flex items-center gap-2"><BarChart className="h-4 w-4 text-accent" /> Data Analytics</li>
                   <li className="flex items-center gap-2"><Code className="h-4 w-4 text-accent" /> Scalable Architecture</li>
                   <li className="flex items-center gap-2"><Lightbulb className="h-4 w-4 text-accent" /> AI/ML Implementation</li>
                   <li className="flex items-center gap-2"><Users className="h-4 w-4 text-accent" /> Team Leadership</li>
