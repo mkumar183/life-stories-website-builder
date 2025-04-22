@@ -1,17 +1,13 @@
-
 import { Link } from 'react-router-dom';
 import { Github, Linkedin, Mail } from 'lucide-react';
-
 export function Footer() {
   const currentYear = new Date().getFullYear();
-  
-  return (
-    <footer className="bg-secondary py-12">
+  return <footer className="bg-secondary py-12">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About Column */}
           <div>
-            <h3 className="font-serif text-xl font-medium mb-4">Your Name</h3>
+            <h3 className="font-serif text-xl font-medium mb-4">Manoj Kumar</h3>
             <p className="text-muted-foreground mb-4 max-w-md">
               A personal website showcasing my professional journey, family life, and self-discovery path through yoga and meditation.
             </p>
@@ -48,29 +44,13 @@ export function Footer() {
           <div className="md:text-right">
             <h3 className="font-serif text-xl font-medium mb-4">Connect</h3>
             <div className="flex space-x-4 md:justify-end">
-              <a 
-                href="https://github.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:text-accent transition-colors"
-                aria-label="GitHub"
-              >
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors" aria-label="GitHub">
                 <Github className="h-6 w-6" />
               </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="hover:text-accent transition-colors"
-                aria-label="LinkedIn"
-              >
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors" aria-label="LinkedIn">
                 <Linkedin className="h-6 w-6" />
               </a>
-              <a 
-                href="mailto:your.email@example.com" 
-                className="hover:text-accent transition-colors"
-                aria-label="Email"
-              >
+              <a href="mailto:your.email@example.com" className="hover:text-accent transition-colors" aria-label="Email">
                 <Mail className="h-6 w-6" />
               </a>
             </div>
@@ -81,11 +61,8 @@ export function Footer() {
           <p className="text-sm text-muted-foreground">
             &copy; {currentYear} Your Name. All rights reserved.
           </p>
-          <p className="text-sm text-muted-foreground mt-2 md:mt-0">
-            Built with React, Tailwind CSS, and passion
-          </p>
+          <p className="text-sm text-muted-foreground mt-2 md:mt-0">Built with React, Tailwind CSS, and passion</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 }
