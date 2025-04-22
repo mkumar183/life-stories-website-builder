@@ -1,73 +1,66 @@
-# Welcome to your Lovable project
+# My Life Journey - Personal Website
 
-## Project info
+A beautifully designed personal website that showcases three core life journeys: professional achievements, family life, and self-discovery through yoga and meditation.
 
-**URL**: https://lovable.dev/projects/a5efcd57-6932-456d-96d1-5161f2ddc2c8
+## Project Overview
 
-## How can I edit this code?
+This website serves as a living introduction to the world, capturing a life journey, values, skills, thoughts, and purpose. It features:
 
-There are several ways of editing your application.
+- **Clean, elegant UI** with responsive design
+- **Light/dark mode** for comfortable viewing
+- **Three core journey sections**:
+  - Professional Journey
+  - Family & Life Journey
+  - Journey of Self (yoga, meditation, wellness)
+- **Blog section** ready for Supabase integration
+- **Contact form** for reaching out
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a5efcd57-6932-456d-96d1-5161f2ddc2c8) and start prompting.
+This project is built with:
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui components
+- Tailwind Typography for blog content
 
-Changes made via Lovable will be committed automatically to this repo.
+## Future Enhancements
 
-**Use your preferred IDE**
+- Supabase integration for blog management
+- Newsletter signup
+- Multi-language support
+- Podcast/audio section
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Development Setup
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+To run this project locally:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Clone the repository
+git clone <REPO_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Navigate to the project directory
+cd <PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Supabase Integration (Coming Soon)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+The blog feature is prepared for Supabase integration, which will enable:
+- Authentication for blog management
+- Storage of blog posts and metadata
+- Dynamic rendering of blog content with Markdown support
 
-**Use GitHub Codespaces**
+## Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+This project can be easily deployed on platforms like Vercel or Netlify.
 
-## What technologies are used for this project?
+## License
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a5efcd57-6932-456d-96d1-5161f2ddc2c8) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+All rights reserved.
