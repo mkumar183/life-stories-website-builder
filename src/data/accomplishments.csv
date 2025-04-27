@@ -1,0 +1,19 @@
+date, accomplishment, resource
+01-Apr-2025, Learned Basics of React through youtube, https://www.youtube.com/watch?v=x4rFhThSX04&t=24454s&pp=ygUOcmVhY3QgdHV0b3JpYWw%3D
+05-Apr-2025, Learned creating applications using Lovable, https://lovable.dev , github repos 
+06-Apr-2025, "Learned supabase. serverless architecture, storages, RLS etc ", supabase.com 
+10-Apr-2025, "Stitching an end to end application with React and Supabase", 
+12-Apr-2025, "Build micro-apps within same project in sub directory and moving these around easily", 
+15-Apr-2025. "Build independent apps in React/Supabase/Lovable and created a shell for such apps", https://github.com/mkumar183/new-shell-template
+17-Apr-2025, "Added openai chatbot to Scholar app. Added fast API backend in python deployed on render" https://github.com/mkumar183/agentic-ai-poc-render/blob/main/main.py
+18-Apr-2025, "Learned about JWT Tokens. How to read these. and how it works. Learned RLS in supabase. how it can be created by someone and verified by someone using public keys but only by private key it can be created. between public and private key there are some relations its core of crypto" , https://www.youtube.com/watch?v=7Q17ubqLfaM
+26-Apr-2025, "Learned about playwright. How to login to applications take screenshots and get list of APIs on website", https://github.com/mkumar183/agentic-ai-poc-render/blob/main/playwright-poc.py
+26-Apr-2025, "How to build an Agentic platform. Its design and architecture. Using shell started building Agentic platform", https://github.com/mkumar183/agentic-scholar-system
+27-Apr-2025, "Put together an agentic architecture in place. Including how to store credentials securely", 
+
+
+Things to learn:
+Celery 
+Supabase Vaults 
+PYOTP 
+

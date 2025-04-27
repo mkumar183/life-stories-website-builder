@@ -1,4 +1,3 @@
-
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -32,11 +31,11 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="rounded-2xl overflow-hidden shadow-xl animate-scale-in">
+            <div className="rounded-2xl overflow-hidden shadow-xl animate-scale-in bg-gradient-to-b from-accent/5 to-background p-1">
               <img 
-                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d"
-                alt="Person reflecting and working" 
-                className="w-full h-auto object-cover"
+                src="/images/profile.jpg"
+                alt="Professional headshot against a green foliage background" 
+                className="w-full h-auto object-cover rounded-xl"
               />
             </div>
           </div>
