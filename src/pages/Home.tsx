@@ -46,9 +46,9 @@ export default function Home() {
       <section className="py-16 bg-accent/5">
         <div className="container-custom max-w-4xl">
           <blockquote className="font-serif text-xl md:text-2xl lg:text-3xl text-center italic">
-            "The journey of a thousand miles begins with a single step."
+            "Nature never hurries, yet everything is accomplished."
             <footer className="mt-4 text-base font-sans text-muted-foreground">
-              — Lao Tzu
+              — Rumi
             </footer>
           </blockquote>
         </div>
