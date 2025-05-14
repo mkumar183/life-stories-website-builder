@@ -33,7 +33,7 @@ export default function Home() {
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl animate-scale-in bg-gradient-to-b from-accent/5 to-background p-1">
               <img 
-                src="/images/profile-optimized.jpg"
+                src="/images/hero.jpg"
                 alt="Professional headshot against a green foliage background" 
                 className="w-full h-auto object-cover rounded-xl"
               />
