@@ -29,6 +29,14 @@ export default function Home() {
                     Read My Blog
                   </Link>
                 </Button>
+                <Button 
+                  size="lg" 
+                  variant="secondary"
+                  onClick={() => window.open('/professional1.html', '_blank')}
+                  className="flex items-center gap-2"
+                >
+                  View Professional Infographic <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl animate-scale-in bg-gradient-to-b from-accent/5 to-background p-1">

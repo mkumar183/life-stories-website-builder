@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manoj Kumar - AI & Engineering Leader</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- 
+    Narrative Plan:
+    1. Introduction: Hook with a strong title, summarizing Manoj's 27-year career and focus on AI/ML leadership.
+    2. Key Metrics & KPIs: Immediately showcase quantifiable impact with "Big Numbers" and donut charts.
+    3. Career Timeline: Visually represent his journey from Infosys to the current AI-focused role at Nuragi.com.
+    4. Core Expertise: Use bar charts to visualize technical skill distribution and lists for leadership competencies.
+    5. AI Innovation Focus: Detail his work at Nuragi.com and PowerSchool using a structured HTML/CSS flow diagram.
+    6. Foundation: Conclude with his strong educational background from IIT and IIIT.
+    
+    Visualization Choices (NO SVG/MERMAID):
+    - Data Point: Key Achievements (Revenue Growth, Cost Reduction etc.) -> Goal: Inform -> Visualization: Donut Charts (Chart.js) & Big Numbers (HTML/CSS). Justification: Excellent for highlighting single, powerful metrics.
+    - Data Point: Career Progression -> Goal: Change -> Visualization: Timeline (HTML/CSS). Justification: Clearly shows events over time.
+    - Data Point: Technical Skills -> Goal: Compare -> Visualization: Bar Chart (Chart.js). Justification: Effectively compares proficiency across different categories.
+    - Data Point: Agentic AI Platform Concept -> Goal: Organize -> Visualization: Flow Diagram (HTML/CSS). Justification: Illustrates a process or relationship using structured elements, avoiding prohibited libraries.
+
+    Color Palette: Brilliant Blues (#003F5C, #7A5195, #EF5675, #FFA600)
+
+    Confirmation: NEITHER Mermaid JS NOR SVG were used in this output. All charts are rendered on Canvas by Chart.js. All diagrams are built with structured HTML and styled with Tailwind CSS.
+    -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .text-shadow-custom {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .brand-gradient {
+            background: linear-gradient(90deg, #003F5C, #7A5195);
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-bold text-[#003F5C] text-shadow-custom">MANOJ KUMAR</h1>
+            <p class="text-xl md:text-2xl text-[#7A5195] mt-2">Visionary Engineering Leader | AI & SaaS Innovation</p>
+            <p class="max-w-3xl mx-auto mt-4 text-gray-600">
+                A dynamic technology executive with over 27 years of experience steering end-to-end product development, scaling multi-million dollar SaaS platforms, and pioneering the integration of cutting-edge AI to drive business transformation.
+            </p>
+        </header>
+
+        <main class="space-y-12">
+
+            <section id="kpis">
+                <h2 class="text-3xl font-bold text-center mb-8 text-[#003F5C]">Quantifiable Impact</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center transition-transform transform hover:scale-105">
+                        <h3 class="text-lg font-semibold text-gray-500">Revenue Growth</h3>
+                        <div class="chart-container" style="height: 200px; max-height: 200px;">
+                             <canvas id="revenueGrowthChart"></canvas>
+                        </div>
+                        <p class="mt-4 text-gray-600">Catalyzed significant revenue increase at Zenoti by successfully onboarding key enterprise clients.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-lg text-center transition-transform transform hover:scale-105">
+                        <h3 class="text-lg font-semibold text-gray-500">Cost & Time Reduction</h3>
+                         <p class="text-6xl font-bold text-[#EF5675] mt-8">80%</p>
+                        <p class="mt-4 text-gray-600">Slashed cloud migration upgrade timelines at PowerSchool from Azure to AWS.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center transition-transform transform hover:scale-105">
+                        <h3 class="text-lg font-semibold text-gray-500">Support Ticket Reduction</h3>
+                         <div class="chart-container" style="height: 200px; max-height: 200px;">
+                             <canvas id="supportTicketChart"></canvas>
+                        </div>
+                        <p class="mt-4 text-gray-600">Decreased support tickets by revamping enterprise reporting processes at Oracle.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center transition-transform transform hover:scale-105">
+                        <h3 class="text-lg font-semibold text-gray-500">Team Leadership</h3>
+                        <p class="text-6xl font-bold text-[#FFA600] mt-8">50+</p>
+                        <p class="mt-4 text-gray-600">Expanded and led high-performance engineering teams at PowerSchool to drive 10x platform enhancements.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="timeline">
+                <h2 class="text-3xl font-bold text-center mb-12 text-[#003F5C]">Career Journey: From Engineer to AI Pioneer</h2>
+                <div class="relative wrap overflow-hidden p-10 h-full">
+                    <div class="border-2-2 absolute brand-gradient h-full border" style="right: 50%; border: 2px solid #FFA600; border-radius: 1%;"></div>
+                    <div class="border-2-2 absolute brand-gradient h-full border" style="left: 50%; border: 2px solid #FFA600; border-radius: 1%;"></div>
+                    
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#FFA600] shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto font-semibold text-lg text-white">1</h1>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="mb-3 font-bold text-gray-800 text-xl">AI Product & Engineering Lead</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Nuragi.com (2024-Pres)</p>
+                            <p class="text-xs text-gray-600 mt-2">Driving Agentic AI platforms and AI-driven interview products.</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#EF5675] shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto text-white font-semibold text-lg">2</h1>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="mb-3 font-bold text-gray-800 text-xl">VP of Engineering</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">PowerSchool (2017-2024)</p>
+                             <p class="text-xs text-gray-600 mt-2">Introduced AI/ML into ETLs, Jira, and Git; led cloud migration.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#BC5090] shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto font-semibold text-lg text-white">3</h1>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="mb-3 font-bold text-gray-800 text-xl">Director of Engineering</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Zenoti & TekSystems (2012-2017)</p>
+                             <p class="text-xs text-gray-600 mt-2">Launched analytics platforms and grew service revenue by 40%.</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                        <div class="order-1 w-5/12"></div>
+                        <div class="z-20 flex items-center order-1 bg-[#7A5195] shadow-xl w-8 h-8 rounded-full">
+                            <h1 class="mx-auto text-white font-semibold text-lg">4</h1>
+                        </div>
+                        <div class="order-1 bg-white rounded-lg shadow-xl w-5/12 px-6 py-4">
+                            <h3 class="mb-3 font-bold text-gray-800 text-xl">Sr. Eng. Manager / Developer</h3>
+                            <p class="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">Oracle & SumTotal (1999-2012)</p>
+                             <p class="text-xs text-gray-600 mt-2">Enhanced reporting systems and launched new analytics platforms.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="expertise">
+                <h2 class="text-3xl font-bold text-center mb-8 text-[#003F5C]">Core Expertise</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-[#7A5195]">Technical Skillset</h3>
+                        <p class="text-gray-600 mb-4">A deep and broad technical acumen across modern technology stacks, with a specialization in AI and large-scale data systems.</p>
+                        <div class="chart-container">
+                            <canvas id="skillsChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold mb-4 text-[#7A5195]">Leadership Competencies</h3>
+                         <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center"><span class="text-[#FFA600] mr-2 text-2xl">✓</span>Engineering & Product Leadership</li>
+                            <li class="flex items-center"><span class="text-[#FFA600] mr-2 text-2xl">✓</span>AI/ML Implementation & Strategy</li>
+                            <li class="flex items-center"><span class="text-[#FFA600] mr-2 text-2xl">✓</span>Scalable Cloud Architecture (AWS, Azure)</li>
+                            <li class="flex items-center"><span class="text-[#FFA600] mr-2 text-2xl">✓</span>Agile Transformation & DevOps Culture</li>
+                            <li class="flex items-center"><span class="text-[#FFA600] mr-2 text-2xl">✓</span>Budgeting, Forecasting & Resource Planning</li>
+                            <li class="flex items-center"><span class="text-[#FFA600] mr-2 text-2xl">✓</span>High-Stakes Stakeholder Management</li>
+                         </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ai-innovation">
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h2 class="text-3xl font-bold text-center mb-2 text-[#003F5C]">AI Innovation Hub</h2>
+                    <p class="text-center max-w-2xl mx-auto text-gray-600 mb-8">Conceptualizing and building next-generation AI solutions to solve complex business challenges.</p>
+                    <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-8">
+                        <div class="text-center p-4">
+                            <h4 class="font-bold text-lg text-[#7A5195]">Integrators & Data Sources</h4>
+                            <p class="text-2xl mt-2">⚙️</p>
+                            <p class="text-xs text-gray-500">Diverse APIs, Databases, Platforms</p>
+                        </div>
+                        <div class="text-3xl font-thin text-[#FFA600] transform md:rotate-0 rotate-90">→</div>
+                         <div class="text-center p-4 border-2 border-[#FFA600] rounded-lg">
+                            <h4 class="font-bold text-lg text-[#003F5C]">Agentic AI Platform</h4>
+                             <p class="text-2xl mt-2">🧠</p>
+                             <p class="text-xs text-gray-500">Orchestration, LLMs, NLP</p>
+                        </div>
+                         <div class="text-3xl font-thin text-[#FFA600] transform md:rotate-0 rotate-90">→</div>
+                         <div class="text-center p-4">
+                            <h4 class="font-bold text-lg text-[#7A5195]">Intelligent Solutions</h4>
+                             <p class="text-2xl mt-2">🎯</p>
+                            <p class="text-xs text-gray-500">AI-Powered Interviews, Automated Workflows</p>
+                        </div>
+                    </div>
+                     <p class="text-center max-w-3xl mx-auto text-gray-600 mt-8">At <span class="font-bold">Nuragi.com</span>, leading the charge in building an Agentic AI platform for intelligent candidate screening. Previously at <span class="font-bold">PowerSchool</span>, successfully integrated AI/ML into core ETLs and internal tools like Jira & Git to boost efficiency.</p>
+                </div>
+            </section>
+            
+            <section id="ai-interviewer">
+                <div class="bg-gradient-to-r from-[#003F5C] to-[#7A5195] p-8 rounded-xl shadow-lg text-white">
+                    <h2 class="text-3xl font-bold text-center mb-6">🚀 Latest Innovation: AI Interviewer</h2>
+                    <div class="max-w-4xl mx-auto">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-4 text-[#FFA600]">Revolutionary AI-Powered Interview System</h3>
+                                <p class="text-lg mb-4 leading-relaxed">
+                                    Conceptualized, designed, and built a complete AI Interviewer platform from scratch as part of my work at <span class="font-bold text-[#FFA600]">Nuragi.com</span>.
+                                </p>
+                                <ul class="space-y-3 text-sm">
+                                    <li class="flex items-start"><span class="text-[#FFA600] mr-2 text-lg">💡</span><strong>End-to-End Development:</strong> Sole architect and developer of the entire system</li>
+                                    <li class="flex items-start"><span class="text-[#FFA600] mr-2 text-lg">🧠</span><strong>Advanced AI Integration:</strong> Leveraged LLMs for natural conversation flow</li>
+                                    <li class="flex items-start"><span class="text-[#FFA600] mr-2 text-lg">⚡</span><strong>Real-time Processing:</strong> Instant candidate evaluation and feedback</li>
+                                    <li class="flex items-start"><span class="text-[#FFA600] mr-2 text-lg">📊</span><strong>Smart Analytics:</strong> Comprehensive scoring and insights dashboard</li>
+                                    <li class="flex items-start"><span class="text-[#FFA600] mr-2 text-lg">🔧</span><strong>Scalable Architecture:</strong> Cloud-native design for enterprise deployment</li>
+                                </ul>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+                                    <h4 class="text-xl font-bold mb-4 text-[#FFA600]">Key Features</h4>
+                                    <div class="grid grid-cols-2 gap-4 text-sm">
+                                        <div class="bg-white/5 p-3 rounded-lg">
+                                            <div class="text-2xl mb-2">🎯</div>
+                                            <div class="font-semibold">Adaptive Questioning</div>
+                                        </div>
+                                        <div class="bg-white/5 p-3 rounded-lg">
+                                            <div class="text-2xl mb-2">📝</div>
+                                            <div class="font-semibold">Auto Scoring</div>
+                                        </div>
+                                        <div class="bg-white/5 p-3 rounded-lg">
+                                            <div class="text-2xl mb-2">🔍</div>
+                                            <div class="font-semibold">Bias Detection</div>
+                                        </div>
+                                        <div class="bg-white/5 p-3 rounded-lg">
+                                            <div class="text-2xl mb-2">📋</div>
+                                            <div class="font-semibold">Custom Reports</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
+                            <h4 class="text-lg font-bold mb-2 text-[#FFA600]">Impact & Innovation</h4>
+                            <p class="text-sm leading-relaxed">
+                                This breakthrough innovation revolutionizes the hiring process by providing consistent, unbiased, and scalable candidate assessment. 
+                                The AI Interviewer adapts to different roles, industries, and experience levels, delivering personalized interview experiences 
+                                while maintaining standardized evaluation criteria. Built with modern AI/ML technologies and deployed on cloud infrastructure 
+                                for maximum reliability and performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="education">
+                 <h2 class="text-3xl font-bold text-center mb-8 text-[#003F5C]">Education & Foundation</h2>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-6 rounded-xl shadow-lg text-center transition-transform transform hover:scale-105">
+                         <h3 class="text-xl font-bold text-[#7A5195]">PGDMS, AI/ML & Data Science</h3>
+                         <p class="text-gray-600 mt-2">IIIT Bangalore (2022)</p>
+                         <p class="text-4xl mt-4">🎓</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-lg text-center transition-transform transform hover:scale-105">
+                         <h3 class="text-xl font-bold text-[#7A5195]">B. Tech.</h3>
+                         <p class="text-gray-600 mt-2">IIT Kharagpur (1997)</p>
+                         <p class="text-4xl mt-4">🏛️</p>
+                    </div>
+                 </div>
+            </section>
+
+
+        </main>
+        
+        <footer class="text-center mt-12 pt-8 border-t border-gray-300">
+            <p class="text-gray-500">Infographic created based on the professional resume of Manoj Kumar.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const brilliantBlues = ['#003F5C', '#7A5195', '#EF5675', '#FFA600'];
+        
+        const tooltipCallback = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: function(tooltipItems) {
+                            const item = tooltipItems[0];
+                            let label = item.chart.data.labels[item.dataIndex];
+                            if (Array.isArray(label)) {
+                                return label.join(' ');
+                            } else {
+                                return label;
+                            }
+                        }
+                    }
+                },
+                legend: {
+                    display: false
+                }
+            }
+        };
+
+        function wrapLabel(str, maxWidth) {
+            if (str.length <= maxWidth) return str;
+            const words = str.split(' ');
+            const lines = [];
+            let currentLine = words[0];
+            for (let i = 1; i < words.length; i++) {
+                if (currentLine.length + words[i].length + 1 < maxWidth) {
+                    currentLine += ' ' + words[i];
+                } else {
+                    lines.push(currentLine);
+                    currentLine = words[i];
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        const createDonutChart = (ctx, label, data, backgroundColor, text) => {
+            new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: [label, ''],
+                    datasets: [{
+                        data: data,
+                        backgroundColor: [backgroundColor, '#e9ecef'],
+                        borderColor: ['#ffffff', '#ffffff'],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    cutout: '75%',
+                    plugins: {
+                        tooltip: { enabled: false },
+                        legend: { display: false },
+                        title: {
+                            display: true,
+                            text: text,
+                            position: 'top',
+                            align: 'center',
+                            color: '#003F5C',
+                            font: {
+                                size: 48,
+                                weight: 'bold'
+                            },
+                             padding: {
+                                top: 110, 
+                            }
+                        }
+                    }
+                }
+            });
+        };
+        
+        const revenueCtx = document.getElementById('revenueGrowthChart')?.getContext('2d');
+        if (revenueCtx) {
+            createDonutChart(revenueCtx, 'Revenue Growth', [250, 50], '#7A5195', '250%');
+        }
+
+        const supportTicketCtx = document.getElementById('supportTicketChart')?.getContext('2d');
+        if (supportTicketCtx) {
+            createDonutChart(supportTicketCtx, 'Reduction', [60, 40], '#EF5675', '-60%');
+        }
+
+        const skillsCtx = document.getElementById('skillsChart')?.getContext('2d');
+        if (skillsCtx) {
+            const originalLabels = ['AI/ML & Data Science', 'Cloud Computing (AWS/Azure)', 'Databases (SQL/NoSQL)', 'Backend & DevOps'];
+            const wrappedLabels = originalLabels.map(label => wrapLabel(label, 16));
+
+            new Chart(skillsCtx, {
+                type: 'bar',
+                data: {
+                    labels: wrappedLabels,
+                    datasets: [{
+                        label: 'Expertise Level',
+                        data: [95, 90, 85, 88],
+                        backgroundColor: ['#003F5C', '#7A5195', '#EF5675', '#FFA600'],
+                        borderRadius: 5,
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    ...tooltipCallback,
+                     scales: {
+                        x: {
+                           display: false,
+                           beginAtZero: true,
+                           max: 100
+                        },
+                        y: {
+                            ticks: {
+                                color: '#003F5C',
+                                font: {
+                                    weight: '600'
+                                }
+                            },
+                             grid: {
+                                display: false
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
